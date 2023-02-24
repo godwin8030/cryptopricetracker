@@ -81,19 +81,32 @@ body{
 }
 
 .coin.rising{
-    background: linear-gradient(90deg, #202022, #4eb64510);
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
 }
 
 .coin.rising .coin-price .price{
     color: #30ff20;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .coin.falling{
-    background: linear-gradient(90deg, #202022, #aa444425);
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
 }
 
 .coin.falling .coin-price .price{
-    color: #ff4040;
+    color: #ff0000;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes gradient {
